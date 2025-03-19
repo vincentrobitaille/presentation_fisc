@@ -60,7 +60,7 @@ Défis économiques et politiques
 
 **Spill over**: municipalité bénéficie ou souffrent des décisions de ses voisins (ex: déplacement de la criminalité)
 
-**Satisfaction des électeurs**: base électorale insatisfaite en comparaison aux voisins, élus ne reviendra pas aux prochaines élections (yardstick competition)
+**Satisfaction des électeurs**: yardstick competition
 
 **Optimalité**: biens à fort spill over peuvent être sous financés (payeur ne récupère pas tous les bénéfices)
 :::
@@ -77,9 +77,6 @@ Modèles de compétitivité fiscale (concurrence parfaite)
 
 ::: {.fragment .fade-in}
 Modèles de compétition fiscale avec interactions stratégiques (théorie des jeux)
-
--   Information complète ou incomplète
--   En plus des caractéristiques économiques, démographiques et politiques, présence d'interaction [@case1993]
 :::
 
 ## Compétition fiscale (Tiebout)
@@ -108,14 +105,8 @@ Compétition des juridictions pour offrir des combinaisons de taxes et biens pub
 :::
 ::::
 
-:::: {.fragment .fade-in}
-::: {.fragment .semi-fade-out}
--   Similaire aux modèles de compétition parfaite
-:::
-::::
-
 ::: {.fragment .fade-in}
-Critiqué pour ses hypothèses contraignantes [@bewley1981; @dowding1994]
+-   Similaire aux modèles de compétition parfaite
 :::
 
 ::: notes
@@ -136,6 +127,8 @@ Hypothèses contraignantes
 
 ::: {.fragment .fade-in}
 -   Interactions entre les décisions de taxation
+    -   En plus des caractéristiques économiques, démographiques et politiques, présence d'interaction [@case1993]
+    -   Information complète ou incomplète
 :::
 
 ::: {.fragment .fade-in}
@@ -180,37 +173,32 @@ Interactions stratégiques - corrélation entre les individus
 
 :::: {.fragment .fade-in}
 ::: {.fragment .semi-fade-out}
-Modélisation de la variable de taux (continue ou censurée)
+-   Problème d'endogénéité
+:::
+::::
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+-   Économétrie spatiale
 :::
 ::::
 
 ::: {.fragment .fade-in}
-Approche classique c. bayésienne
-:::
-
-::: {.fragment .fade-in}
--   Classique: répétition d'un nombre élevé de fois
--   Bayésienne: niveau de croyance à propos d'un évènement
-:::
-
-::: {.fragment .fade-in}
-$$\underbrace{p(\theta|y)}_\text{Posterior} = \frac{\overbrace{p(\theta)}^\text{Prior} \times \overbrace{p(y|\theta)}^\text{Vraisem.}}{\underbrace{p(y)}_\text{Données}}$$
+Modélisation de la variable de taux (continue ou censurée)
 :::
 
 ::: notes
 **interactions**: Modèles économétriques standard assument généralement iid (indép. des individus)
 
 **Censure**: Jamais négatif, contrainte légales exogènes (ex: réglementation fédérale)
-
-**Bayésien**: Approche différente des probabilités, converge avec fréq lorsque $n\rightarrow \infty$, peut faciliter l'estimation de certains modèles complexes
 :::
 
 ## Question de recherche
 
 Estimation des effets d'interactions dans un jeu simultané de compétition fiscale par une approche bayésienne
 
-- Taux de taxation
-- Municipalité de Caroline du Nord (2012)
+-   Taux de taxation
+-   Municipalité de Caroline du Nord (2012)
 
 ::: notes
 Basé sur: Tobit models with social interactions: Complete c. incomplete information (Yang et al. 2018)
@@ -264,10 +252,6 @@ Choix du modèle selon le type de compétition [@bordignon2003]:
 -   **SAR**: *Mobilité de l'assiette fiscale*
 :::
 ::::
-
-::: {.fragment .fade-in}
-Modèles spatiaux standard auraient tendance à surestimer les interactions [@lyytikäinen2012] (Finland)
-:::
 
 ::: notes
 **SEM**: Compétition associée aux variables inobservées (termes d'erreur)
@@ -341,14 +325,8 @@ Structure d'information [@yang2018]
 :::
 ::::
 
-:::: {.fragment .fade-in}
-::: {.fragment .semi-fade-out}
--   Critiqué pour ses hypothèses très exigeantes[@bewley1981]
-:::
-::::
-
 ::: {.fragment .fade-in}
--   Résultats empiriques mixtes concernant les hypothèses et implications [@dowding1994]
+-   Critiqué pour ses hypothèses très exigeantes[@bewley1981]
 :::
 
 ::: notes
@@ -389,6 +367,12 @@ Modèle utile, mais sérieuses limitations.
 ::: notes
 Littérature tend à démontrer la présence d'interactions, mais reste de l'incertitude.
 
+**Bordignon** : Données de taxes sur les propriétés en Italie
+
+**Delgado** : Taxes sur propriétés et vehicules
+
+**Lyytikäinen** : taxes sur propriété, manque preuve peut venir faible importance de la taxe
+
 L'ampleur de l'effet est beaucoup moins clair.
 :::
 
@@ -424,15 +408,15 @@ Estimation des effets d'interaction à l'aide de modèles spatiaux censurés [@p
 :::
 ::::
 
-:::: {.fragment .fade-in}
+::: {.fragment .fade-in}
 -   Information incomplète rejetée c. information complète
-::::
+:::
 
 ## Contribution thématique
 
-:::: {.fragment .fade-in}
+::: {.fragment .fade-in}
 -   Améliorer la compréhension du processus d'interactions dans les politiques fiscales des juridictions locales sous la forme d'un équilibre de Nash
-::::
+:::
 
 ## Contribution méthodologique
 
