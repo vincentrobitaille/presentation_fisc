@@ -1,0 +1,28 @@
+---
+title: "Compétition fiscale locale"
+author: "Vincent Robitaille"
+format: 
+  revealjs:
+    theme: dark
+editor: visual
+bibliography: references.bib
+csl: apa.csl
+---
+
+## Motivation (5 diapo max)
+
+## Question de recherche (3 diapo max)
+
+## Énoncé de l'hypothèse à tester (1 diapo)
+
+## Contributions (2 diapo max)
+
+## Littérature (4 diapo max)
+
+## Données et statistiques descriptives (OPTIONNEL, 5 à 10 diapo max)
+
+## Théorie (5 à 10 diapo max)
+
+## Stratégie empirique (4 à 5 diapo)
+
+## Justification des hypothèses d'identification (1 à 2 diapo)
