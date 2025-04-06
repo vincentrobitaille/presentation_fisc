@@ -11,18 +11,114 @@ csl: apa.csl
 
 ## Motivation (5 diapo max)
 
+- Énoncer du problème (image, graphes, chiffres)
+- Importance du problème
+- Pertinence d'étudier ce problème
+
+## Problématique
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+Financement des municipalités
+:::
+::::
+
+:::: {.fragment .fade-in}
+Difficulté de modélisation
+::::
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+-   Érosion de l'assiette fiscale
+:::
+::::
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+-   "Spill over" d'externalités et de bénéfices
+:::
+::::
+
+::: {.fragment .fade-in}
+-   Satisfaction des électeurs
+:::
+
+## Importance du problème
+
+:::: {.fragment .fade-in}
+Choix du modèle et processus d'intéraction
+::::
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+- Intéractions entre juridictions
+:::
+::::
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+- Données censurées
+:::
+::::
+
+## Pertinence de l'étude
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+Endégénéité
+:::
+::::
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+Spécification
+:::
+::::
+
 ## Question de recherche (3 diapo max)
+
+- QR: L'équilibre d'un jeu de compétition fiscale est-il déterminé en fonction du taux de taxe latent ou censuré ?
+- Type de question et pourquoi: QR classique éclairée par de meilleures méthodes empiriques.
+- Défendre intérêt public: permet de mieux comprendre le processus de compétition fiscale et surtout de mieux comprendre les impacts des choix de modèles sur l'étude de cette problématique.
 
 ## Énoncé de l'hypothèse à tester (1 diapo)
 
+- Modèles latents vs simultanés
+
+L'intéraction des municipalités dans un jeu de compétition fiscale est-il mieux représenté par un modèle latent ou simultané ?
+
 ## Contributions (2 diapo max)
 
+- Meilleure compréhension du type d'intéraction
+- Meilleures connaissances concernant le choix de modèle
+
+- À détailler...
+
 ## Littérature (4 diapo max)
+
+- Modèle bayésien latent avec intéraction et censure (litt)
+- Modèle spatial Tobit latent
+- Modèle spatial Tobit simultané
 
 ## Données et statistiques descriptives (OPTIONNEL, 5 à 10 diapo max)
 
 ## Théorie (5 à 10 diapo max)
 
+- Économétrie spatiale
+- Censure
+  - Probit spatial
+  - Tobit spatial
+- Intro bayésien
+- Suite bayésien ?
+
 ## Stratégie empirique (4 à 5 diapo)
 
+- Estimation des modèles avec différentes structures et variable latente vs censurée
+- Comparaison des modèles
+
 ## Justification des hypothèses d'identification (1 à 2 diapo)
+
+- On se trouve dans un équilibre de Nash unique (précision selon valeur du coeff d'autocorr)
+- On se trouve dans un jeu en information complète (toutes les caractéristiques pertinentes et le terme d'erreur son connus de tous)
+
+## Références
