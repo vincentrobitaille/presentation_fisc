@@ -11,11 +11,111 @@ csl: apa.csl
 
 ## Motivation (5 diapo max)
 
+## Motivation empirique
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+Financement des biens publics locaux
+:::
+::::
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+-   Routes municipales
+:::
+::::
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+-   Sécurité publique
+:::
+::::
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+Défis économiques et politiques
+:::
+::::
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+-   Érosion de l'assiette fiscale
+:::
+::::
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+-   "Spill over" des externalités et des bénéfices
+:::
+::::
+
+::: {.fragment .fade-in}
+-   Satisfaction des électeurs
+:::
+
+## Motivation méthodologique
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+Effets d'interaction
+:::
+::::
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+Variable de taux censurée
+:::
+::::
+
+:::: {.fragment .fade-in}
+Variable latente vs variable observée
+::::
+
+
+## Motivation méthodologique (suite)
+
+```{dot}
+digraph D {
+ bgcolor="#181818";
+
+  node [
+    fontcolor = "#e6e6e6",
+    style = filled,
+    color = "#e6e6e6",
+    fillcolor = "#333333"
+  ]
+
+  edge [
+    color = "#e6e6e6",
+    fontcolor = "#e6e6e6"
+  ]
+  Interaction; Censure; Latence;
+  Censure->Latence;
+  Interaction->Latence;
+}
+```
+
 ## Question de recherche (3 diapo max)
+
+Quel est l'impact de la censure sur la modélisation des interactions dans un jeu de compétition fiscale locale ?
 
 ## Énoncé de l'hypothèse à tester (1 diapo)
 
+Un modèle simultané (censuré) est-il mieux adapté qu'un modèle latent ?
+
 ## Contributions (2 diapo max)
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+Meilleure comprehension du type d'interaction
+:::
+::::
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+Diversification des approches de modélisation
+:::
+::::
 
 ## Littérature (4 diapo max)
 
@@ -23,6 +123,23 @@ csl: apa.csl
 
 ## Théorie (5 à 10 diapo max)
 
+Fonction de *payoff* [@yang2018]
+$$r(\tau_i, \tau_{-i}, x_i) = -\gamma(\tau_i - x'_i\beta - \lambda \sum_{j\neq i}W_{n,ij}\tau_j-\varepsilon_i)^2$$
+
+Équilibre de Nash (information complète)
+$$\tau_i^* = \max\left\{x_i'\beta + \lambda\sum_{j\neq i}W_{n,ij}\tau^*_j + \varepsilon_i, 0\right\}$$
+
+
 ## Stratégie empirique (4 à 5 diapo)
 
 ## Justification des hypothèses d'identification (1 à 2 diapo)
+
+**Jeu en information complète** 
+
+-   Standard dans la littérature
+-   Simplification
+
+**Équilibre de Nash unique**
+
+-   Nécessaire à la modélisation
+-   Standard dans la littérature

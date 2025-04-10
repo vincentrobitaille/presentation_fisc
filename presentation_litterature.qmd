@@ -341,7 +341,7 @@ Modèle utile, mais sérieuses limitations.
 
 :::: {.fragment .fade-in}
 ::: {.fragment .semi-fade-out}
--   Effet positif et important de l'interactions dans les dépenses des états américains [@case1993]
+-   Effet positif et important de l'interaction dans les dépenses des états américains [@case1993]
 :::
 ::::
 
