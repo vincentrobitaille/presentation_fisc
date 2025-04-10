@@ -11,13 +11,13 @@ csl: apa.csl
 
 ## Motivation (5 diapo max)
 
-<<<<<<< HEAD
+
 ## Motivation empirique
 
 :::: {.fragment .fade-in}
 ::: {.fragment .semi-fade-out}
 Financement des biens publics locaux
-=======
+
 - Énoncer du problème (image, graphes, chiffres)
 - Importance du problème
 - Pertinence d'étudier ce problème
@@ -27,12 +27,10 @@ Financement des biens publics locaux
 :::: {.fragment .fade-in}
 ::: {.fragment .semi-fade-out}
 Financement des municipalités
->>>>>>> b49b4bff370b7c9cea57e323250c8bea42cd7149
 :::
 ::::
 
 :::: {.fragment .fade-in}
-<<<<<<< HEAD
 ::: {.fragment .semi-fade-out}
 -   Routes municipales
 :::
@@ -48,9 +46,6 @@ Financement des municipalités
 ::: {.fragment .semi-fade-out}
 Défis économiques et politiques
 :::
-=======
-Difficulté de modélisation
->>>>>>> b49b4bff370b7c9cea57e323250c8bea42cd7149
 ::::
 
 :::: {.fragment .fade-in}
@@ -61,11 +56,7 @@ Difficulté de modélisation
 
 :::: {.fragment .fade-in}
 ::: {.fragment .semi-fade-out}
-<<<<<<< HEAD
 -   "Spill over" des externalités et des bénéfices
-=======
--   "Spill over" d'externalités et de bénéfices
->>>>>>> b49b4bff370b7c9cea57e323250c8bea42cd7149
 :::
 ::::
 
@@ -73,49 +64,19 @@ Difficulté de modélisation
 -   Satisfaction des électeurs
 :::
 
-<<<<<<< HEAD
 ## Motivation méthodologique
 
 :::: {.fragment .fade-in}
 ::: {.fragment .semi-fade-out}
 Effets d'interaction
-=======
-## Importance du problème
-
-:::: {.fragment .fade-in}
-Choix du modèle et processus d'intéraction
-::::
-
-:::: {.fragment .fade-in}
-::: {.fragment .semi-fade-out}
-- Intéractions entre juridictions
->>>>>>> b49b4bff370b7c9cea57e323250c8bea42cd7149
 :::
 ::::
 
 :::: {.fragment .fade-in}
 ::: {.fragment .semi-fade-out}
-<<<<<<< HEAD
-Variable de taux censurée
-=======
-- Données censurées
+Effets d'interaction
 :::
 ::::
-
-## Pertinence de l'étude
-
-:::: {.fragment .fade-in}
-::: {.fragment .semi-fade-out}
-Endégénéité
->>>>>>> b49b4bff370b7c9cea57e323250c8bea42cd7149
-:::
-::::
-
-:::: {.fragment .fade-in}
-<<<<<<< HEAD
-Variable latente vs variable observée
-::::
-
 
 ## Motivation méthodologique (suite)
 
@@ -161,11 +122,6 @@ Meilleure comprehension du type d'interaction
 Diversification des approches de modélisation
 :::
 ::::
-=======
-::: {.fragment .semi-fade-out}
-Spécification
-:::
-::::
 
 ## Question de recherche (3 diapo max)
 
@@ -184,9 +140,6 @@ L'intéraction des municipalités dans un jeu de compétition fiscale est-il mie
 - Meilleure compréhension du type d'intéraction
 - Meilleures connaissances concernant le choix de modèle
 
-- À détailler...
->>>>>>> b49b4bff370b7c9cea57e323250c8bea42cd7149
-
 ## Littérature (4 diapo max)
 
 - Modèle bayésien latent avec intéraction et censure (litt)
@@ -197,7 +150,6 @@ L'intéraction des municipalités dans un jeu de compétition fiscale est-il mie
 
 ## Théorie (5 à 10 diapo max)
 
-<<<<<<< HEAD
 Fonction de *payoff* [@yang2018]
 $$r(\tau_i, \tau_{-i}, x_i) = -\gamma(\tau_i - x'_i\beta - \lambda \sum_{j\neq i}W_{n,ij}\tau_j-\varepsilon_i)^2$$
 
@@ -218,13 +170,6 @@ $$\tau_i^* = \max\left\{x_i'\beta + \lambda\sum_{j\neq i}W_{n,ij}\tau^*_j + \var
 
 -   Nécessaire à la modélisation
 -   Standard dans la littérature
-=======
-- Économétrie spatiale
-- Censure
-  - Probit spatial
-  - Tobit spatial
-- Intro bayésien
-- Suite bayésien ?
 
 ## Stratégie empirique (4 à 5 diapo)
 
@@ -237,4 +182,4 @@ $$\tau_i^* = \max\left\{x_i'\beta + \lambda\sum_{j\neq i}W_{n,ij}\tau^*_j + \var
 - On se trouve dans un jeu en information complète (toutes les caractéristiques pertinentes et le terme d'erreur son connus de tous)
 
 ## Références
->>>>>>> b49b4bff370b7c9cea57e323250c8bea42cd7149
+
