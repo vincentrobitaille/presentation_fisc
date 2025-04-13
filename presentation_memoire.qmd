@@ -11,16 +11,17 @@ csl: apa.csl
 
 ## Motivation (5 diapo max)
 
-
 ## Motivation empirique
 
-:::: {.fragment .fade-in}
-::: {.fragment .semi-fade-out}
+::::{.fragment .fade-in}
+:::{.fragment .semi-fade-out}
 Financement des biens publics locaux
+:::
+::::
 
-- Énoncer du problème (image, graphes, chiffres)
-- Importance du problème
-- Pertinence d'étudier ce problème
+-   Énoncer du problème (image, graphes, chiffres)
+-   Importance du problème
+-   Pertinence d'étudier ce problème
 
 ## Problématique
 
@@ -125,43 +126,102 @@ Diversification des approches de modélisation
 
 ## Question de recherche (3 diapo max)
 
-- QR: L'équilibre d'un jeu de compétition fiscale est-il déterminé en fonction du taux de taxe latent ou censuré ?
-- Type de question et pourquoi: QR classique éclairée par de meilleures méthodes empiriques.
-- Défendre intérêt public: permet de mieux comprendre le processus de compétition fiscale et surtout de mieux comprendre les impacts des choix de modèles sur l'étude de cette problématique.
+-   QR: L'équilibre d'un jeu de compétition fiscale est-il déterminé en fonction du taux de taxe latent ou censuré ?
+-   Type de question et pourquoi: QR classique éclairée par de meilleures méthodes empiriques.
+-   Défendre intérêt public: permet de mieux comprendre le processus de compétition fiscale et surtout de mieux comprendre les impacts des choix de modèles sur l'étude de cette problématique.
 
 ## Énoncé de l'hypothèse à tester (1 diapo)
 
-- Modèles latents vs simultanés
+-   Modèles latents vs simultanés
 
 L'intéraction des municipalités dans un jeu de compétition fiscale est-il mieux représenté par un modèle latent ou simultané ?
 
 ## Contributions (2 diapo max)
 
-- Meilleure compréhension du type d'intéraction
-- Meilleures connaissances concernant le choix de modèle
+-   Meilleure compréhension du type d'intéraction
+-   Meilleures connaissances concernant le choix de modèle
 
 ## Littérature (4 diapo max)
 
-- Modèle bayésien latent avec intéraction et censure (litt)
-- Modèle spatial Tobit latent
-- Modèle spatial Tobit simultané
+-   Modèle bayésien latent avec intéraction et censure (litt)
+-   Modèle spatial Tobit latent
+-   Modèle spatial Tobit simultané
 
 ## Données et statistiques descriptives (OPTIONNEL, 5 à 10 diapo max)
 
 ## Théorie (5 à 10 diapo max)
 
-Fonction de *payoff* [@yang2018]
+## Modèle théorique
+
+Fonction de *payoff* [@yang2018] 
+
 $$r(\tau_i, \tau_{-i}, x_i) = -\gamma(\tau_i - x'_i\beta - \lambda \sum_{j\neq i}W_{n,ij}\tau_j-\varepsilon_i)^2$$
 
-Équilibre de Nash (information complète)
+Équilibre de Nash (information complète) 
+
 $$\tau_i^* = \max\left\{x_i'\beta + \lambda\sum_{j\neq i}W_{n,ij}\tau^*_j + \varepsilon_i, 0\right\}$$
 
+## Modèle théorique - interpretation
+
+Jeu en information complète
+
+Interaction sur la variable observé (non latente)
+
+## Économétrie bayesienne
+
+Les paramètres sont des variables aléatoires
+
+Prior: $p\left(\theta_1, \theta_2, ..., \theta_k\right)$
+
+Vraisemblance: $p\left(y|\theta_1, \theta_2, ..., \theta_k\right)$
+
+Posterior: $p\left(\theta_1, \theta_2, ..., \theta_k|y\right)$
+
+## Théorème de Bayes
+
+$$p(\theta|y) = \frac{p(\theta)p(y|\theta)}{p(y)}$$
+
+$$p(\theta|y) \propto p(\theta)p(y|\theta)$$
+
+## Économétrie spatiale
+
+Modèle de lag spatial
+
+$$y = \lambda W y + X\beta + \varepsilon, \quad E\left[\varepsilon|X\right] = 0$$
+Matrice de poids $W$ non-stochastique et exogène.
+
+  - Contiguité
+  - Distance
+  - Etc.
+  
+  
+## Modèle censuré
+
+Tobit: $y = \max\{0, y^*\}$
+
+Spatial Tobit (SAR) [@qu2012]
+
+- Modèle latent
+- Modèle simultané
+
+## Spatial Tobit (SAR)
+
+Modèle latent
+
+$$y_i = \max\left\{0, \lambda\sum_{j=1}^nw_{ij} y^*_j + x_i\beta + \varepsilon_i\right\}$$
+
+Modèle simultané
+
+$$y_i = \max\left\{0, \lambda\sum_{j=1}^nw_{ij} y_j + x_i\beta + \varepsilon_i\right\}$$
 
 ## Stratégie empirique (4 à 5 diapo)
 
+-   Estimation des modèles avec différentes structures et variable latente vs censurée
+-   Comparaison des modèles (bayes factor ?)
+
 ## Justification des hypothèses d'identification (1 à 2 diapo)
 
-**Jeu en information complète** 
+**Jeu en information complète**
 
 -   Standard dans la littérature
 -   Simplification
@@ -171,15 +231,9 @@ $$\tau_i^* = \max\left\{x_i'\beta + \lambda\sum_{j\neq i}W_{n,ij}\tau^*_j + \var
 -   Nécessaire à la modélisation
 -   Standard dans la littérature
 
-## Stratégie empirique (4 à 5 diapo)
+**Matrice d'interactions non stochastique et exogène**
 
-- Estimation des modèles avec différentes structures et variable latente vs censurée
-- Comparaison des modèles
-
-## Justification des hypothèses d'identification (1 à 2 diapo)
-
-- On se trouve dans un équilibre de Nash unique (précision selon valeur du coeff d'autocorr)
-- On se trouve dans un jeu en information complète (toutes les caractéristiques pertinentes et le terme d'erreur son connus de tous)
+-   Standard dans la littérature
+-   Simplification
 
 ## Références
-
