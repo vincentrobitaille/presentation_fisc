@@ -19,10 +19,6 @@ Financement des biens publics locaux
 :::
 ::::
 
--   Énoncer du problème (image, graphes, chiffres)
--   Importance du problème
--   Pertinence d'étudier ce problème
-
 ## Problématique
 
 :::: {.fragment .fade-in}
@@ -69,14 +65,12 @@ Défis économiques et politiques
 
 :::: {.fragment .fade-in}
 ::: {.fragment .semi-fade-out}
-Effets d'interaction
+Présence de censure
 :::
 ::::
 
 :::: {.fragment .fade-in}
-::: {.fragment .semi-fade-out}
 Effets d'interaction
-:::
 ::::
 
 ## Motivation méthodologique (suite)
@@ -138,11 +132,9 @@ Meilleure comprehension du type d'interaction
 ::::
 
 :::: {.fragment .fade-in}
-::: {.fragment .semi-fade-out}
 Diversification des approches de modélisation
 
-- Modèles spatiaux Tobit peu utilisés
-:::
+- Modèles Tobit spatiaux peu utilisés
 ::::
 
 ## Littérature (4 diapo max)
@@ -153,9 +145,13 @@ Diversification des approches de modélisation
 
 ## Données et statistiques descriptives (OPTIONNEL, 5 à 10 diapo max)
 
-**Nombre d'observations**:
+**Nombre d'observations**: $n = ?$
 
 **Variables**
+
+- Taux de la taxe sur les propriétés
+- Revenu médian des ménages par juridiction
+- Taille de la population
 
 ## Théorie (5 à 10 diapo max)
 
@@ -170,18 +166,10 @@ $$r(\tau_i, \tau_{-i}, x_i) = -\gamma(\tau_i - x'_i\beta - \lambda \sum_{j\neq i
 ::::
 
 :::: {.fragment .fade-in}
-::: {.fragment .semi-fade-out}
 Équilibre de Nash (information complète)
 
 $$\tau_i^* = \max\left\{x_i'\beta + \lambda\sum_{j\neq i}W_{n,ij}\tau^*_j + \varepsilon_i, 0\right\}$$
-:::
 ::::
-
-## Modèle théorique - interpretation
-
-Jeu en information complète
-
-Interaction sur la variable observé (non latente)
 
 ## Économétrie bayesienne
 
@@ -239,9 +227,7 @@ Spatial Tobit (SAR) [@qu2012]
 ::::
 
 :::: {.fragment .fade-in}
-::: {.fragment .semi-fade-out}
 -   Modèle simultané
-:::
 ::::
 
 ## Spatial Tobit (SAR)
@@ -255,11 +241,9 @@ $$y_i = \max\left\{0, \lambda\sum_{j=1}^nw_{ij} y^*_j + x_i\beta + \varepsilon_i
 ::::
 
 :::: {.fragment .fade-in}
-::: {.fragment .semi-fade-out}
 Modèle simultané
 
 $$y_i = \max\left\{0, \lambda\sum_{j=1}^nw_{ij} y_j + x_i\beta + \varepsilon_i\right\}$$
-:::
 ::::
 
 ## Stratégie empirique (4 à 5 diapo)
@@ -288,11 +272,10 @@ $$y_i = \max\left\{0, \lambda\sum_{j=1}^nw_{ij} y_j + x_i\beta + \varepsilon_i\r
 ::::
 
 :::: {.fragment .fade-in}
-::: {.fragment .semi-fade-out}
 **Matrice d'interactions non stochastique et exogène**
 
 -   Standard dans la littérature
 -   Simplification
-:::
 ::::
+
 ## Références
