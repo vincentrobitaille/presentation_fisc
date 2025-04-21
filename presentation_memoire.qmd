@@ -69,9 +69,9 @@ Présence de censure
 :::
 ::::
 
-:::: {.fragment .fade-in}
+::: {.fragment .fade-in}
 Effets d'interaction
-::::
+:::
 
 ## Motivation méthodologique (suite)
 
@@ -98,28 +98,29 @@ digraph D {
 
 ## Question de recherche (3 diapo max)
 
-Quel est l'impact de la censure sur la modélisation des interactions dans un jeu de compétition fiscale locale ?  (À revoir)
+Quel est l'impact de la censure sur la modélisation des interactions dans un jeu de compétition fiscale locale ? (À revoir)
 
 ## Justification
 
-:::: {.fragment .fade-in}
+::: {.fragment .fade-in}
 Meilleure compréhension de la structure d'intéraction
-::::
-:::: {.fragment .fade-in}
-- Validation de modèles théoriques
-::::
-:::: {.fragment .fade-in}
-- Effets de l'application de seuils exogènes
-::::
+:::
 
+::: {.fragment .fade-in}
+-   Validation de modèles théoriques
+:::
+
+::: {.fragment .fade-in}
+-   Effets de l'application de seuils exogènes
+:::
 
 ## Énoncé de l'hypothèse à tester (1 diapo)
 
 Un modèle simultané (censuré) est-il mieux adapté qu'un modèle latent ?
 
-:::: {.fragment .fade-in}
-- Un modèle simultané devrait mieux performer
-::::
+::: {.fragment .fade-in}
+-   Un modèle simultané devrait mieux performer
+:::
 
 ## Contributions (2 diapo max)
 
@@ -127,15 +128,15 @@ Un modèle simultané (censuré) est-il mieux adapté qu'un modèle latent ?
 ::: {.fragment .semi-fade-out}
 Meilleure comprehension du type d'interaction
 
-- Comparaison des structures d'interaction
+-   Comparaison des structures d'interaction
 :::
 ::::
 
-:::: {.fragment .fade-in}
+::: {.fragment .fade-in}
 Diversification des approches de modélisation
 
-- Modèles Tobit spatiaux peu utilisés
-::::
+-   Modèles Tobit spatiaux peu utilisés
+:::
 
 ## Littérature (4 diapo max)
 
@@ -149,9 +150,9 @@ Diversification des approches de modélisation
 
 **Variables**
 
-- Taux de la taxe sur les propriétés
-- Revenu médian des ménages par juridiction
-- Taille de la population
+-   Taux de la taxe sur les propriétés
+-   Revenu médian des ménages par juridiction
+-   Taille de la population
 
 ## Théorie (5 à 10 diapo max)
 
@@ -165,60 +166,61 @@ $$r(\tau_i, \tau_{-i}, x_i) = -\gamma(\tau_i - x'_i\beta - \lambda \sum_{j\neq i
 :::
 ::::
 
-:::: {.fragment .fade-in}
+::: {.fragment .fade-in}
 Équilibre de Nash (information complète)
 
 $$\tau_i^* = \max\left\{x_i'\beta + \lambda\sum_{j\neq i}W_{n,ij}\tau^*_j + \varepsilon_i, 0\right\}$$
-::::
+:::
 
 ## Économétrie bayesienne
 
 Les paramètres sont des variables aléatoires
 
-:::: {.fragment .fade-in}
+::: {.fragment .fade-in}
 Prior: $p\left(\theta_1, \theta_2, ..., \theta_k\right)$
-::::
-:::: {.fragment .fade-in}
+:::
+
+::: {.fragment .fade-in}
 Vraisemblance: $p\left(y|\theta_1, \theta_2, ..., \theta_k\right)$
-::::
-:::: {.fragment .fade-in}
+:::
+
+::: {.fragment .fade-in}
 Posterior: $p\left(\theta_1, \theta_2, ..., \theta_k|y\right)$
-::::
+:::
 
 ## Théorème de Bayes
 
 $$p(\theta|y) = \frac{p(\theta)p(y|\theta)}{p(y)}$$
 
-:::: {.fragment .fade-in}
+::: {.fragment .fade-in}
 $$p(\theta|y) \propto p(\theta)p(y|\theta)$$
-::::
+:::
 
 ## Économétrie spatiale
 
 Modèle de lag spatial
 
-$$y = \lambda W y + X\beta + \varepsilon, \quad E\left[\varepsilon|X\right] = 0$$ 
-:::: {.fragment .fade-in}
-Matrice de poids $W$ non-stochastique et exogène.
-::::
+$$y = \lambda W y + X\beta + \varepsilon, \quad E\left[\varepsilon|X\right] = 0$$ :::: {.fragment .fade-in} Matrice de poids $W$ non-stochastique et exogène. ::::
 
-:::: {.fragment .fade-in}
+::: {.fragment .fade-in}
 -   Contiguité
-::::
-:::: {.fragment .fade-in}
+:::
+
+::: {.fragment .fade-in}
 -   Distance
-::::
-:::: {.fragment .fade-in}
+:::
+
+::: {.fragment .fade-in}
 -   Etc.
-::::
+:::
 
 ## Modèle censuré
 
 Tobit: $y = \max\{0, y^*\}$
 
-:::: {.fragment .fade-in}
+::: {.fragment .fade-in}
 Spatial Tobit (SAR) [@qu2012]
-::::
+:::
 
 :::: {.fragment .fade-in}
 ::: {.fragment .semi-fade-out}
@@ -226,9 +228,9 @@ Spatial Tobit (SAR) [@qu2012]
 :::
 ::::
 
-:::: {.fragment .fade-in}
+::: {.fragment .fade-in}
 -   Modèle simultané
-::::
+:::
 
 ## Spatial Tobit (SAR)
 
@@ -240,11 +242,11 @@ $$y_i = \max\left\{0, \lambda\sum_{j=1}^nw_{ij} y^*_j + x_i\beta + \varepsilon_i
 :::
 ::::
 
-:::: {.fragment .fade-in}
+::: {.fragment .fade-in}
 Modèle simultané
 
 $$y_i = \max\left\{0, \lambda\sum_{j=1}^nw_{ij} y_j + x_i\beta + \varepsilon_i\right\}$$
-::::
+:::
 
 ## Stratégie empirique (4 à 5 diapo)
 
@@ -271,11 +273,11 @@ $$y_i = \max\left\{0, \lambda\sum_{j=1}^nw_{ij} y_j + x_i\beta + \varepsilon_i\r
 :::
 ::::
 
-:::: {.fragment .fade-in}
+::: {.fragment .fade-in}
 **Matrice d'interactions non stochastique et exogène**
 
 -   Standard dans la littérature
 -   Simplification
-::::
+:::
 
 ## Références
