@@ -9,23 +9,11 @@ bibliography: references.bib
 csl: apa.csl
 ---
 
-## Motivation (5 diapo max)
-
 ## Motivation empirique
 
-:::: {.fragment .fade-in}
-::: {.fragment .semi-fade-out}
-Financement des biens publics locaux
-:::
-::::
-
-## Problématique
-
-:::: {.fragment .fade-in}
 ::: {.fragment .semi-fade-out}
 Financement des municipalités
 :::
-::::
 
 :::: {.fragment .fade-in}
 ::: {.fragment .semi-fade-out}
@@ -41,37 +29,38 @@ Financement des municipalités
 
 :::: {.fragment .fade-in}
 ::: {.fragment .semi-fade-out}
-Défis économiques et politiques
+Mécanismes de compétition fiscale locale
 :::
 ::::
 
 :::: {.fragment .fade-in}
 ::: {.fragment .semi-fade-out}
--   Érosion de l'assiette fiscale
+-   Solution de coin
 :::
 ::::
 
 :::: {.fragment .fade-in}
 ::: {.fragment .semi-fade-out}
--   "Spill over" des externalités et des bénéfices
+-   Intéractions sociales
 :::
 ::::
 
-::: {.fragment .fade-in}
--   Satisfaction des électeurs
-:::
 
 ## Motivation méthodologique
 
 :::: {.fragment .fade-in}
 ::: {.fragment .semi-fade-out}
-Présence de censure
+Présence de censure (solution de coin)
+
+- Modèle Tobit
 :::
 ::::
 
-::: {.fragment .fade-in}
+:::: {.fragment .fade-in}
 Effets d'interaction
-:::
+
+- Économétrie spatiale
+::::
 
 ## Motivation méthodologique (suite)
 
@@ -96,9 +85,9 @@ digraph D {
 }
 ```
 
-## Question de recherche (3 diapo max)
+## Question de recherche
 
-Quel est l'impact de la censure sur la modélisation des interactions dans un jeu de compétition fiscale locale ? (À revoir)
+Quel est l'impact de la censure sur la modélisation des interactions dans un jeu de compétition fiscale locale ?
 
 ## Justification
 
@@ -114,7 +103,7 @@ Meilleure compréhension de la structure d'intéraction
 -   Effets de l'application de seuils exogènes
 :::
 
-## Énoncé de l'hypothèse à tester (1 diapo)
+## Énoncé de l'hypothèse à tester
 
 Un modèle simultané (censuré) est-il mieux adapté qu'un modèle latent ?
 
@@ -122,7 +111,7 @@ Un modèle simultané (censuré) est-il mieux adapté qu'un modèle latent ?
 -   Un modèle simultané devrait mieux performer
 :::
 
-## Contributions (2 diapo max)
+## Contributions
 
 :::: {.fragment .fade-in}
 ::: {.fragment .semi-fade-out}
@@ -138,11 +127,27 @@ Diversification des approches de modélisation
 -   Modèles Tobit spatiaux peu utilisés
 :::
 
-## Littérature (4 diapo max)
+## Interactions
 
--   Modèle bayésien latent avec intéraction et censure (litt)
--   Modèle spatial Tobit latent
--   Modèle spatial Tobit simultané
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+Politiques fiscales limitées avec interactions. [@porto2013]:
+
+-   Modèle bayésien censuré (interactions latentes)
+-   Tobit avec lag spatio-temporel
+:::
+::::
+
+:::: {.fragment .fade-in}
+Modèles Tobit avec effet spatial [@qu2012]
+
+-   Tobit SLM simultané
+-   Tobit SLM latent
+::::
+
+::: {.fragment .fade-in}
+Structure d'information [@yang2018]
+:::
 
 ## Données et statistiques descriptives (OPTIONNEL, 5 à 10 diapo max)
 
@@ -150,11 +155,9 @@ Diversification des approches de modélisation
 
 **Variables**
 
--   Taux de la taxe sur les propriétés
+-   Taux de la taxe sur les propriétés par juridiction
 -   Revenu médian des ménages par juridiction
--   Taille de la population
-
-## Théorie (5 à 10 diapo max)
+-   Taille de la population par juridiction
 
 ## Modèle théorique
 
@@ -200,7 +203,11 @@ $$p(\theta|y) \propto p(\theta)p(y|\theta)$$
 
 Modèle de lag spatial
 
-$$y = \lambda W y + X\beta + \varepsilon, \quad E\left[\varepsilon|X\right] = 0$$ :::: {.fragment .fade-in} Matrice de poids $W$ non-stochastique et exogène. ::::
+$$y = \lambda W y + X\beta + \varepsilon, \quad E\left[\varepsilon|X\right] = 0$$ 
+
+:::: {.fragment .fade-in} 
+Matrice de poids $W$ non-stochastique et exogène. 
+::::
 
 ::: {.fragment .fade-in}
 -   Contiguité
@@ -215,8 +222,11 @@ $$y = \lambda W y + X\beta + \varepsilon, \quad E\left[\varepsilon|X\right] = 0$
 :::
 
 ## Modèle censuré
+::: {.fragment .semi-fade-out}
+Tobit
 
-Tobit: $y = \max\{0, y^*\}$
+-   $y = \max\{0, y^*\}$
+:::
 
 ::: {.fragment .fade-in}
 Spatial Tobit (SAR) [@qu2012]
@@ -248,12 +258,30 @@ Modèle simultané
 $$y_i = \max\left\{0, \lambda\sum_{j=1}^nw_{ij} y_j + x_i\beta + \varepsilon_i\right\}$$
 :::
 
-## Stratégie empirique (4 à 5 diapo)
+## Stratégie empirique
 
--   Estimation des modèles avec différentes structures et variable latente vs censurée
--   Comparaison des modèles (bayes factor ?)
+::: {.fragment .semi-fade-out}
+Estimation des modèles latents et simultanés
+:::
 
-## Justification des hypothèses d'identification (1 à 2 diapo)
+:::: {.fragment .fade-in}
+Comparaison bayésienne des modèles
+::::
+
+:::: {.fragment .fade-in}
+-   Sélection de modèle
+-   *Model averaging*
+::::
+
+## Comparaison bayésienne
+
+Soient $L$ modèles $\{M_l\}_{l=1}^L$
+
+$$p(M_l|y) = \frac{\overbrace{p(y|M_l)}^{\text{Vrais. marginale}} \times \overbrace{p(M_l)}^{\text{Prior}}}{p(y)}$$
+
+$$p(y|M_l) = \int_{\mathbf{\beta}}p\left(y|M_l, \mathbf{\beta}\right)p(\mathbf{\beta}) d\mathbf{\beta}$$
+
+## Justification des hypothèses d'identification
 
 :::: {.fragment .fade-in}
 ::: {.fragment .semi-fade-out}
@@ -275,9 +303,6 @@ $$y_i = \max\left\{0, \lambda\sum_{j=1}^nw_{ij} y_j + x_i\beta + \varepsilon_i\r
 
 ::: {.fragment .fade-in}
 **Matrice d'interactions non stochastique et exogène**
-
--   Standard dans la littérature
--   Simplification
 :::
 
 ## Références
