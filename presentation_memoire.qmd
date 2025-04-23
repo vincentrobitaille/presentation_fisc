@@ -45,22 +45,21 @@ Mécanismes de compétition fiscale locale
 :::
 ::::
 
-
 ## Motivation méthodologique
 
 :::: {.fragment .fade-in}
 ::: {.fragment .semi-fade-out}
 Présence de censure (solution de coin)
 
-- Modèle Tobit
+-   Modèle Tobit
 :::
 ::::
 
-:::: {.fragment .fade-in}
+::: {.fragment .fade-in}
 Effets d'interaction
 
-- Économétrie spatiale
-::::
+-   Économétrie spatiale
+:::
 
 ## Motivation méthodologique (suite)
 
@@ -138,12 +137,12 @@ Politiques fiscales limitées avec interactions. [@porto2013]:
 :::
 ::::
 
-:::: {.fragment .fade-in}
+::: {.fragment .fade-in}
 Modèles Tobit avec effet spatial [@qu2012]
 
 -   Tobit SLM simultané
 -   Tobit SLM latent
-::::
+:::
 
 ::: {.fragment .fade-in}
 Structure d'information [@yang2018]
@@ -203,11 +202,11 @@ $$p(\theta|y) \propto p(\theta)p(y|\theta)$$
 
 Modèle de lag spatial
 
-$$y = \lambda W y + X\beta + \varepsilon, \quad E\left[\varepsilon|X\right] = 0$$ 
+$$y = \lambda W y + X\beta + \varepsilon, \quad E\left[\varepsilon|X\right] = 0$$
 
-:::: {.fragment .fade-in} 
-Matrice de poids $W$ non-stochastique et exogène. 
-::::
+::: {.fragment .fade-in}
+Matrice de poids $W$ non-stochastique et exogène.
+:::
 
 ::: {.fragment .fade-in}
 -   Contiguité
@@ -222,6 +221,7 @@ Matrice de poids $W$ non-stochastique et exogène.
 :::
 
 ## Modèle censuré
+
 ::: {.fragment .semi-fade-out}
 Tobit
 
@@ -264,14 +264,14 @@ $$y_i = \max\left\{0, \lambda\sum_{j=1}^nw_{ij} y_j + x_i\beta + \varepsilon_i\r
 Estimation des modèles latents et simultanés
 :::
 
-:::: {.fragment .fade-in}
+::: {.fragment .fade-in}
 Comparaison bayésienne des modèles
-::::
+:::
 
-:::: {.fragment .fade-in}
+::: {.fragment .fade-in}
 -   Sélection de modèle
 -   *Model averaging*
-::::
+:::
 
 ## Comparaison bayésienne
 
