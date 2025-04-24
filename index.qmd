@@ -1,0 +1,308 @@
+---
+title: "Compétition fiscale locale"
+author: "Vincent Robitaille"
+format: 
+  revealjs:
+    theme: dark
+editor: visual
+bibliography: references.bib
+csl: apa.csl
+---
+
+## Motivation empirique
+
+::: {.fragment .semi-fade-out}
+Financement des municipalités
+:::
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+-   Routes municipales
+:::
+::::
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+-   Sécurité publique
+:::
+::::
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+Mécanismes de compétition fiscale locale
+:::
+::::
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+-   Solution de coin
+:::
+::::
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+-   Intéractions sociales
+:::
+::::
+
+## Motivation méthodologique
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+Présence de censure (solution de coin)
+
+-   Modèle Tobit
+:::
+::::
+
+::: {.fragment .fade-in}
+Effets d'interaction
+
+-   Économétrie spatiale
+:::
+
+## Motivation méthodologique (suite)
+
+```{dot}
+digraph D {
+ bgcolor="#181818";
+
+  node [
+    fontcolor = "#e6e6e6",
+    style = filled,
+    color = "#e6e6e6",
+    fillcolor = "#333333"
+  ]
+
+  edge [
+    color = "#e6e6e6",
+    fontcolor = "#e6e6e6"
+  ]
+  Interaction; Censure; Latence;
+  Censure->Latence;
+  Interaction->Latence;
+}
+```
+
+## Question de recherche
+
+Quel est l'impact de la censure sur la modélisation des interactions dans un jeu de compétition fiscale locale ?
+
+## Justification
+
+::: {.fragment .fade-in}
+Meilleure compréhension de la structure d'intéraction
+:::
+
+::: {.fragment .fade-in}
+-   Validation de modèles théoriques
+:::
+
+::: {.fragment .fade-in}
+-   Effets de l'application de seuils exogènes
+:::
+
+## Énoncé de l'hypothèse à tester
+
+Un modèle simultané (censuré) est-il mieux adapté qu'un modèle latent ?
+
+::: {.fragment .fade-in}
+-   Un modèle simultané devrait mieux performer
+:::
+
+## Contributions
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+Meilleure comprehension du type d'interaction
+
+-   Comparaison des structures d'interaction
+:::
+::::
+
+::: {.fragment .fade-in}
+Diversification des approches de modélisation
+
+-   Modèles Tobit spatiaux peu utilisés
+:::
+
+## Interactions
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+Politiques fiscales limitées avec interactions. [@porto2013]:
+
+-   Modèle bayésien censuré (interactions latentes)
+-   Tobit avec lag spatio-temporel
+:::
+::::
+
+::: {.fragment .fade-in}
+Modèles Tobit avec effet spatial [@qu2012]
+
+-   Tobit SLM simultané
+-   Tobit SLM latent
+:::
+
+::: {.fragment .fade-in}
+Structure d'information [@yang2018]
+:::
+
+## Données et statistiques descriptives (OPTIONNEL, 5 à 10 diapo max)
+
+**Nombre d'observations**: $n = ?$
+
+**Variables**
+
+-   Taux de la taxe sur les propriétés par juridiction
+-   Revenu médian des ménages par juridiction
+-   Taille de la population par juridiction
+
+## Modèle théorique
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+Fonction de *payoff* [@yang2018]
+
+$$r(\tau_i, \tau_{-i}, x_i) = -(\tau_i - x'_i\beta - \lambda \sum_{j\neq i}W_{n,ij}\tau_j-\varepsilon_i)^2$$
+:::
+::::
+
+::: {.fragment .fade-in}
+Équilibre de Nash (information complète)
+
+$$\tau_i^* = \max\left\{x_i'\beta + \lambda\sum_{j\neq i}W_{n,ij}\tau^*_j + \varepsilon_i, 0\right\}$$
+:::
+
+## Économétrie bayesienne
+
+Les paramètres sont des variables aléatoires
+
+::: {.fragment .fade-in}
+Prior: $p\left(\theta_1, \theta_2, ..., \theta_k\right)$
+:::
+
+::: {.fragment .fade-in}
+Vraisemblance: $p\left(y|\theta_1, \theta_2, ..., \theta_k\right)$
+:::
+
+::: {.fragment .fade-in}
+Posterior: $p\left(\theta_1, \theta_2, ..., \theta_k|y\right)$
+:::
+
+## Théorème de Bayes
+
+$$p(\theta|y) = \frac{p(\theta)p(y|\theta)}{p(y)}$$
+
+::: {.fragment .fade-in}
+$$p(\theta|y) \propto p(\theta)p(y|\theta)$$
+:::
+
+## Économétrie spatiale
+
+Modèle de lag spatial
+
+$$y = \lambda W y + X\beta + \varepsilon, \quad E\left[\varepsilon|X\right] = 0$$
+
+::: {.fragment .fade-in}
+Matrice de poids $W$ non-stochastique et exogène.
+:::
+
+::: {.fragment .fade-in}
+-   Contiguité
+:::
+
+::: {.fragment .fade-in}
+-   Distance
+:::
+
+::: {.fragment .fade-in}
+-   Etc.
+:::
+
+## Modèle censuré
+
+::: {.fragment .semi-fade-out}
+Tobit
+
+-   $y = \max\{0, y^*\}$
+:::
+
+::: {.fragment .fade-in}
+Spatial Tobit (SAR) [@qu2012]
+:::
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+-   Modèle latent
+:::
+::::
+
+::: {.fragment .fade-in}
+-   Modèle simultané
+:::
+
+## Spatial Tobit (SAR)
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+Modèle latent
+
+$$y_i = \max\left\{0, \lambda\sum_{j=1}^nw_{ij} y^*_j + x_i\beta + \varepsilon_i\right\}$$
+:::
+::::
+
+::: {.fragment .fade-in}
+Modèle simultané
+
+$$y_i = \max\left\{0, \lambda\sum_{j=1}^nw_{ij} y_j + x_i\beta + \varepsilon_i\right\}$$
+:::
+
+## Stratégie empirique
+
+::: {.fragment .semi-fade-out}
+Estimation des modèles latents et simultanés
+:::
+
+::: {.fragment .fade-in}
+Comparaison bayésienne des modèles
+:::
+
+::: {.fragment .fade-in}
+-   Sélection de modèle
+-   *Model averaging*
+:::
+
+## Comparaison bayésienne
+
+Soient $L$ modèles $\{M_l\}_{l=1}^L$
+
+$$p(M_l|y) = \frac{\overbrace{p(y|M_l)}^{\text{Vrais. marginale}} \times \overbrace{p(M_l)}^{\text{Prior}}}{p(y)}$$
+
+$$p(y|M_l) = \int_{\mathbf{\beta}}p\left(y|M_l, \mathbf{\beta}\right)p(\mathbf{\beta}) d\mathbf{\beta}$$
+
+## Justification des hypothèses d'identification
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+**Jeu en information complète**
+
+-   Standard dans la littérature
+-   Simplification
+:::
+::::
+
+:::: {.fragment .fade-in}
+::: {.fragment .semi-fade-out}
+**Équilibre de Nash unique**
+
+-   Nécessaire à la modélisation
+-   Standard dans la littérature
+:::
+::::
+
+::: {.fragment .fade-in}
+**Matrice d'interactions non stochastique et exogène**
+:::
+
+## Références
