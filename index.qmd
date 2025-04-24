@@ -148,7 +148,7 @@ Modèles Tobit avec effet spatial [@qu2012]
 Structure d'information [@yang2018]
 :::
 
-## Données et statistiques descriptives (OPTIONNEL, 5 à 10 diapo max)
+## Données et statistiques descriptives
 
 **Nombre d'observations**: $n = 506$
 
