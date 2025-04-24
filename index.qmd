@@ -164,7 +164,7 @@ Structure d'information [@yang2018]
 ::: {.fragment .semi-fade-out}
 Fonction de *payoff* [@yang2018]
 
-$$r(\tau_i, \tau_{-i}, x_i) = -\gamma(\tau_i - x'_i\beta - \lambda \sum_{j\neq i}W_{n,ij}\tau_j-\varepsilon_i)^2$$
+$$r(\tau_i, \tau_{-i}, x_i) = -(\tau_i - x'_i\beta - \lambda \sum_{j\neq i}W_{n,ij}\tau_j-\varepsilon_i)^2$$
 :::
 ::::
 
